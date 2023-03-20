@@ -1,0 +1,31 @@
+ <table border="1px solid" >
+
+        <thead>
+            <!-- first row -->
+            <tr>
+                <th colspan="3">CRICKET SCORECARD</th>
+            </tr>
+        <tr>
+            <!-- second row -->
+            <th>SR.NO</th>
+            <th>PLAYER NAME</th>
+            <th>RUNS</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let team of player">
+            <tr>
+                <!-- 3rd row -->
+                <td>{{team.id}}</td>
+                <td>{{team.name}}</td>
+                <td>{{team.runs}}</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- 6th row -->
+                <th colspan="2">TOTAL RUNS</th>
+                <th>{{totalRun}}</th>
+            </tr>
+        </tfoot>
+    </table>
